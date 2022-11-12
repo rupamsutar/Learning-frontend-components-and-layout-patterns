@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <title>Pagination</title>
+
+    <style>
+
+        
+        /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        
+        colors: 
+        #343a40;
+        #087f5b;
+        #e6fcf5;
+        #c3fae8
+        
+        
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        /* ------------------------ */
+        /* GENERAL STYLES */
+        /* ------------------------ */
+        body {
+            font-family:"Inter", sans-serif;
+            color: #343a40;
+            line-height:1;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            text-align: center;
+        }
+
+        a {
+            height:28px;
+            width:28px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a:link{
+            font-size: 18px;
+            color:black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+        
+
+        .main-flex{
+            display: flex;
+            gap:24px;
+            /* background-color: aquamarine; */
+            margin: 200px 100px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-num {
+
+            border: none;
+            height: 35px;
+            width: 35px;
+        }
+
+        .btn-num:hover {
+            background-color: #087f5b;
+            color: #fff;
+        }
+
+        .btn, .btn-num {
+            /* border:none; */
+            border-radius: 50%;
+            background-color: #fff
+            ;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-icon {
+            width: 28px;
+            height: 28px;
+            stroke: #087f5b;
+            stroke-width: 2px;
+        }
+
+        .btn-icon:hover {
+            stroke:#fff;
+        }
+
+        .btn {
+            border: 2px solid #087f5b;
+            width: 48px;
+            height: 48px;
+        }
+
+        .btn:hover {
+            border: none;
+            background-color: #087f5b;
+        }
+        
+        </style>
+        
+    </head>
+    <body>
+
+        <div class="main-flex">
+            <button class="btn">
+                <a href="#">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        class="btn-icon"
+                        >
+                        <path 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            d="M15.75 19.5L8.25 12l7.5-7.5" 
+                        />
+                    </svg> 
+                </a>
+            </button>
+            <button class="btn-num"><a href="#">1</a></button>
+            <button class="btn-num"><a href="#">2</a></button>
+            <button class="btn-num"><a href="#">3</a></button>
+            <button class="btn-num"><a href="#">4</a></button>
+            <button class="btn-num"><a href="#">5</a></button>
+            <button class="btn-num"><a href="#">6</a></button>
+            <button class="btn-num"><a href="#">7</a></button>
+            <a><p>...</p></a>
+            <button class="btn-num"><a href="#">15</a></button>
+            <button class="btn">
+                <a href="#">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        class="btn-icon"
+                        >
+                        <path 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            d="M8.25 4.5l7.5 7.5-7.5 7.5" 
+                        />
+                    </svg>
+                </a>
+            </button>
+        </div>
+        
+    </body>
+    </html>
